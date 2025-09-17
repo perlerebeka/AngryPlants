@@ -21,7 +21,9 @@ Currently implemented: player character, movement, shooting, sounds, and effects
 Planned but not finished: enemy flower integration, more animations, and gameplay mechanics.  
 
 ## 📸 Screenshots / Demo
-  
+https://github.com/perlerebeka/AngryPlants/blob/main/screenshots/AngryPlants_home.PNG
+https://github.com/perlerebeka/AngryPlants/blob/main/screenshots/AngryPlants_instructions.PNG
+https://github.com/perlerebeka/AngryPlants/blob/main/screenshots/AngryPlants_level1.PNG
 
 ## 🎨 Credits
 - Pixel art characters and flowers created by me  
