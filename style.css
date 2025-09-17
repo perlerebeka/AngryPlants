@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/main/CutePixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'PixelFont', sans-serif;
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: aliceblue;
+}
+
+/* Start menü */
+
+.container {
+    background: url(assets/startScreen/background/Summer2.png);
+    background-color: rgb(183,251,255);
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img {
+    width: 80%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 40px;
+}
+button {
+    background-color: #f9e242;
+    border: none;
+    color: #e08d49;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'PixelFont', sans-serif;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #e08d49;
+    color: white;
+}
+button:active {
+    background-color: #d0b83f;
+    color: white;
+}
+
+/* Sztori menü */
+
+#storyMenu {
+    background: url(assets/startScreen/background/Summer8.png);
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#storyMenu::before {
+    content: "";
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    inset: 100; 
+    background: rgba(0, 0, 0, 0.4); /* 40% sötétítés */
+    z-index: 1;
+    pointer-events: none; /* ne zavarja a kattinthatóságot */
+  }
+  
+  #storyMenu > * {
+    position: relative;
+    z-index: 2; /* hogy a tartalom a sötétítés fölött legyen */
+  }
+
+#storyText {
+    max-height: 300px; 
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.buttonContainerStory {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; /* Biztos ami biztos */
+}
+
+.buttonContainerStory button {
+    background-color: white;
+    border: none;
+    color: #e08d49;
+}

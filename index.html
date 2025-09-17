@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angry Plants</title>
+</head>
+
+<body>
+    <div id="startMenu" class="container">
+        <div class="title">
+            <img src="assets\startScreen\title\title.png" alt="gameTitle">
+        </div>
+        <div class="buttonContainer">
+            <button id="startButton">START GAME</button>
+            <button id="settingsButton">SETTINGS</button>
+            <button id="creditsButton">CREDITS</button>
+        </div>
+    </div>
+    <div style="display: none;" id="storyMenu" class="container">
+        <p id="storyText"></p>
+        <div class="buttonContainerStory">
+            <button id="playButton">PLAY</button>
+            <button id="backButton">BACK</button>
+        </div>
+    </div>
+    <canvas style="display: none;" id="gameCanvas"></canvas>
+    <script type="module" src="src/game.js"></script>
+</body>
+
+</html>
